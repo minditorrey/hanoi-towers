@@ -3,17 +3,17 @@
 $(document).ready(init);
 var towers = $('.towers');
 var selectedDisk = $('.selectedDisk');
-
+var tower3 = $('.tower-3');
 function init() {
 $('.towers').click(clickTower);
 	
 }
 
 function clickTower(e) {
-	console.log ($('.selected').data('size') );
 
+	
 	var $clickedTower = $(this);
-	console.log($(this).children().data('size'));
+
 	//if this tower does not have selected children and no tower has a selected disk
 	//toggle class selected of first child
 	if($clickedTower.find('.selected').length !==1 && $(".selected").length ===0){
@@ -34,6 +34,11 @@ function clickTower(e) {
 		//toggle class selected
 		$($clickedTower.children()[$clickedTower.children().length-1]).toggleClass("selected");
 	}
+
+	//To Win
+	if($(tower3.disks).length ===3) {
+		$('#win').append("<p>You win!</p>");
+}
 	
 }
 
