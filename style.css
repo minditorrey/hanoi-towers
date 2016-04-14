@@ -1,0 +1,108 @@
+body {
+	background-color: #a8ddb5;
+}
+h1 {
+	color: #084081;
+	text-align: left;
+	font-size: 68px;
+	margin-left: -10px;
+	margin-right: -10px;
+
+	margin-top: -30px;	
+	background-color: #4eb3d3;
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+
+}
+
+ul, p {
+	color: #0868ac;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 50px;
+	line-height: 1;
+}
+
+#instructions {
+	
+	margin: -10px;
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.towers {
+	height: 250px;
+	width: 30%;
+	margin-left: auto;
+  	margin-right: auto;
+	margin: 10px;
+	display: inline-block;
+	color: white;
+	position: relative;
+	background-color: #4eb3d3;
+	
+}
+
+
+.disks {
+	background-color: purple;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+    margin-right: auto;
+    position: absolute;
+    border: 1px solid gray;
+    clear: both;
+  	display: inline-block;
+  	
+}
+
+#disk-1 {
+	width: 120px;
+	height: 25px;
+	z-index: 1;
+	
+	bottom: 0;
+}
+
+#disk-2 {
+	width: 90px;
+	height: 25px;
+	z-index: 2;
+	
+	margin-top: 185px;
+
+
+}
+
+#disk-3 {
+	width: 60px;
+	height: 25px;
+	z-index: 3;
+	
+	margin-top: 150px;
+
+	
+}
+
+#gameBoard {
+	background-color: #0868ac;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+.selected {
+	border: 3px solid #430675;
+}
+
+.selectedDisk{
+	background-color: black;
+}
+
+
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hanoi</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1>The Towers of Hanoi</h1>
+	<p>Instructions:<p>
+	<ul id="instructions">	
+		<li>Move only one disk at a time</li>
+		<li>A disk cannot be placed on top of a smaller disk</li>
+		<li>Click a tower to select a disk</li>
+		<li>Click another tower to select a destination</li>
+		<li>Click again to drop the disk</li>
+	</ul>
+	<div id="gameBoard">
+		<div class="towers tower-1">
+			<div class="disks" id="disk-1" data-size="30"></div>
+			<div class="disks" id="disk-2" data-size="20"></div>
+			<div class="disks" id="disk-3" data-size="10"></div>
+		</div>
+		<div class="towers tower-2"></div>
+		<div class="towers tower-3"></div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
